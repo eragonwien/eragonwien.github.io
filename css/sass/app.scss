@@ -1,0 +1,39 @@
+$dark-color: #373737;
+$light-color: #F4F4F4;
+
+body, html {
+	background-color: $light-color;
+	font-family: Helvetica, sans-serif;
+}
+
+nav {
+
+}
+
+
+.title-pic {
+  	height: 100%;
+    width: 100%;
+    background-image: url('../images/title-pic.jpg');
+    position: relative;
+    overflow: hidden;
+  	.title-header {
+	    background-color: transparent;
+	    position: relative;
+	    z-index: 1;
+  	}
+}
+
+.footer {
+	position: relative;
+    height: 100%;
+    width: 100%;
+    background: yellow;
+
+}
+
+
+
+.round-button {
+	border-radius: 25px;
+}
