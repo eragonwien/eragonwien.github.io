@@ -19,48 +19,70 @@
     <div ng-include="'navbar.html'"></div>
     <div class="welcome">
         <div class="welcome-text">
-            <h1 class="display-3">I'm Hoang Son Nguyen</h1>
-            <h2 class="display-4">I build web application</h2>
-            <button class="btn btn-outline-light">I'm available for hire</button>
-            <p><a href="#skills">See what I can do</a></p>
+            <h1 class="display-2">Hi, my name is</h1>
+            <h1 class="display-1">Hoang Son Nguyen</h1>
+            <p class="display-2">I build <a id="textwriter"></a></p>
+            <div class="bottom-text">
+                <button class="btn btn-outline-light btn-lg"><a class="display-4">I'm available for hire</a></button>
+            </div>
         </div>
     </div>
     <div class="skills">
         <div class="container">
-            <h1 class="display-4"><i class="fa fa-code fa-lg" aria-hidden="true"></i> MY DEV SKILLS</h1>
-            <table class="table table-bordered table-responsive">
-                <tbody>
+            <h1 class="display-3"><i class="fa fa-code fa-lg" aria-hidden="true"></i> MY DEV SKILLS</h1>
+                <table class="table">
                     <tr>
-                        <td><i class="fa fa-laptop fa-lg" aria-hidden="true"></i></td>
-                        <td>Front-end development</td>
+                        <td class="type"><h2><i class="fa fa-laptop" aria-hidden="true"></i> Front-end Development</h2></td>
+                        <td class="language"><h3>HTML - CSS - SCSS - Bootstrap - JS - AngularJS</h3></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumyLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-responsive">
-                <tbody>
-                    <tr>
-                        <td><i class="fa fa-laptop fa-lg" aria-hidden="true"></i></td>
-                        <td>Front-end development</td>
+                        <td colspan="2">
+                            <p> I can build and style an interactive, responsive webpage or app interface from scratch (like this one) with HTML, CSS, SCSS or using a CSS framework like Bootstrap. 
+                                For full-stack apps, I use AngularJS for writing single-page-web app to reduce page's load.
+                            </p>   
+                        </td>
                     </tr>
                     <tr>
-                        <td colspan="2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-responsive">
-                <tbody>
-                    <tr>
-                        <td><i class="fa fa-laptop fa-lg" aria-hidden="true"></i></td>
-                        <td>Front-end development</td>
+                        <td class="type"><h2><i class="fa fa-desktop" aria-hidden="true"></i> MEAN-stack development</h2></td>
+                        <td class="language"><h3>RESTful APIs - NodeJS - ExpressJS - MySQL - MongoDB - Mongoose</h3></td>
                     </tr>
                     <tr>
-                        <td colspan="2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </td>
+                        <td colspan="2">
+                            <p>
+                                I can build full-stack apps with RESTful APIs that performs CRUD operations using NodeJS as server, 
+                                ExpressJS as web framework, Angularjs as Front-end and either MongoDB or MySQL as database (MEAN-stack).
+                            </p>   
+                        </td>
                     </tr>
-                </tbody>
-            </table>
+                    <tr>
+                        <td class="type"><h2><i class="fa fa-desktop" aria-hidden="true"></i> Java opment</h2></td>
+                        <td class="language"><h3>Java - JavaEE - Maven - Apache - Tomcat - PHP - Python</h3></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p>
+                                My Java experience was gathered through university project building LAMP web application with either with PHP or Java.
+                            </p>   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type"><h2><i class="fa fa-laptop" aria-hidden="true"></i>Development Environment</h2></td>
+                        <td class="language"><h3>Git -  </h3></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                                <p>Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing eli
+                                       tr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                        At vero eos et accusam et justo duo dolores et ea rebum. 
+                                       Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                   </p>   
+                        </td>
+                    </tr>
+                </table>
+                
+                
+                
         </div>
     </div>
     
@@ -80,6 +102,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.6.7/angular-resource.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <script type="text/javascript" src="js/typewriter.js"></script>
     <script type="text/javascript" src="js/ngapp.js"></script>
   </body>
 </html>
