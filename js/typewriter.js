@@ -1,9 +1,8 @@
 var i = 0; // charAt position
 var texts = ['beautiful and responsive UI.', 'mobile-friendly UX.', 'web application.'];
-var speed = 50; // wait 50 miliseconds between character
+var speed = 70; // wait 50 miliseconds between character
 var transition_speed = 1500; // wait 2 sec before erase the text
-typeWriter(texts, 0);
-
+setTimeout(typeWriter, 1000, texts, 0);
 function typeWriter(arr, position) {
     if (position >= arr.length) {
         return;
