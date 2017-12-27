@@ -1,8 +1,9 @@
 
 @import "_breakpoint";
 @import "_fonts";
+@import "_projects_links";
 $dark: black;
-$light: white;
+$light: lightgray;
 
 /*** HEIGHT & WIDTH **/
 html {
@@ -16,30 +17,49 @@ html {
     .welcome {
       height: 100%;
       width: 100%;
-      .welcome-text {
-        width: 80%;
-        h4 {
-          height: 4em;
+      .transparent-layer {
+        height: 100%;
+        width: 100%;
+        .welcome-text {
+          width: 80%;
+          h4 {
+            height: 4em;
+          }
         }
       }
     }
   }
 }
+/*** GENERAL ***/
+p {
+  margin: 0 auto;
+  text-align: justify;
+}
 
+.btn-rounded {
+  padding: 1em 2em 1em 2em;
+  border-radius: 5em;
+}
 /*** HEAD ***/
 .welcome {
-  background: black url("../images/title-pic.jpg") no-repeat center;
-  background-position: center;
+  background: $dark url("../images/title-pic.jpg") no-repeat center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .welcome-text { 
-    color: white;
-    text-align: center;
+  .transparent-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .welcome-text { 
+      color: white;
+      text-align: center;
+    }
   }
 }
 /*** BODY ***/
+.skills {
+  background-color: $light;
+}
 /*** FOOT ***/
 
 
