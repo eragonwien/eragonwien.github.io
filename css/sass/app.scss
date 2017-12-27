@@ -59,8 +59,22 @@ p {
 /*** BODY ***/
 .skills {
   background-color: $light;
+  position: relative
 }
 /*** FOOT ***/
 
 
+
+/*** NAVBAR ***/
+
+.custom-navbar {
+  background-color: transparent; 
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  .container {
+    width: 100%;
+  }
+}
 

@@ -107,8 +107,23 @@ p {
 /* line 60, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .skills {
   background-color: lightgray;
+  position: relative;
 }
 
 /*** FOOT ***/
+/*** NAVBAR ***/
+/* line 70, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.custom-navbar {
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+}
+
+/* line 76, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.custom-navbar .container {
+  width: 100%;
+}
 
 /*# sourceMappingURL=../app.map */

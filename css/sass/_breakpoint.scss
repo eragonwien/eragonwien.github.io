@@ -1,7 +1,7 @@
 
 @mixin breakpoint($point) {
-    @if $point == xs {
-      @media (max-width: 576px) { @content ; }
+  @if $point == xs {
+    @media (max-width: 576px) { @content ; }
   }
     @else if $point == sm {
       @media (min-width: 576px) { @content ; }
