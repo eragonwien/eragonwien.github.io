@@ -1,0 +1,28 @@
+@import "_breakpoint";
+    html {
+        font-size: 1rem;
+    }
+
+@include breakpoint(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include breakpoint(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include breakpoint(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+@include breakpoint(xl) {
+    html {
+        font-size: 1.8rem;
+    }
+}
