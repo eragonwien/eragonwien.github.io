@@ -23,7 +23,7 @@ html {
         .welcome-text {
           width: 80%;
           h4 {
-            height: 4em;
+            height: 3em;
           }
         }
       }
@@ -59,7 +59,8 @@ p {
 /*** BODY ***/
 .skills {
   background-color: $light;
-  position: relative
+  position: relative;
+  
 }
 /*** FOOT ***/
 
@@ -78,3 +79,4 @@ p {
   }
 }
 
+/*** BORDER ***/

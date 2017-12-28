@@ -65,7 +65,7 @@ html body .welcome .transparent-layer .welcome-text {
 
 /* line 25, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 html body .welcome .transparent-layer .welcome-text h4 {
-  height: 4em;
+  height: 3em;
 }
 
 /*** GENERAL ***/
@@ -112,7 +112,7 @@ p {
 
 /*** FOOT ***/
 /*** NAVBAR ***/
-/* line 70, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 71, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .custom-navbar {
   background-color: transparent;
   position: absolute;
@@ -121,9 +121,11 @@ p {
   width: 100%;
 }
 
-/* line 76, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 77, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .custom-navbar .container {
   width: 100%;
 }
+
+/*** BORDER ***/
 
 /*# sourceMappingURL=../app.map */
