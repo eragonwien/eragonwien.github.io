@@ -28,10 +28,16 @@ html {
         }
       }
     }
+    .skills {
+      width: 100%;
+      .skills-content {
+        width: 80%;
+      }
+    }
   }
 }
 /*** GENERAL ***/
-p {
+.justify-text {
   margin: 0 auto;
   text-align: justify;
 }
@@ -40,6 +46,13 @@ p {
   padding: 1em 2em 1em 2em;
   border-radius: 5em;
 }
+
+.centered-layer {
+  // this div contains centered div
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*** HEAD ***/
 .welcome {
   background: $dark url("../images/title-pic.jpg") no-repeat center;
@@ -47,9 +60,6 @@ p {
   .transparent-layer {
     background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     .welcome-text { 
       color: white;
       text-align: center;
@@ -59,13 +69,64 @@ p {
 /*** BODY ***/
 .skills {
   background-color: $light;
-  position: relative;
-  
+  .skills-content {
+    margin: 2em 0em 2em 0em;
+    text-align: center;
+  }
 }
+
+
 /*** FOOT ***/
+.work {
+  background-color: $dark;
+  background-size: cover;
+  color: white;
+  .work-content {
+    margin: 2em 0em 2em 0em;
+    text-align: center;
+  }
+}
 
 
 
+.footer {
+  background-color: $light;
+  background-size: cover;
+  .footer-content {
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+/*** ICONS ***/
+.footer-icon{
+  padding: 1em;
+  width: 3em;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-icon:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: orangered;
+  color: white;
+}
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
 /*** NAVBAR ***/
 
 .custom-navbar {
@@ -79,4 +140,3 @@ p {
   }
 }
 
-/*** BORDER ***/
