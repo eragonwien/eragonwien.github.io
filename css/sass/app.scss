@@ -56,7 +56,33 @@ $dark-text: black;
 /*** PROJECTS ***/
 .projects {
   width: 100%;
+  padding: 2em 1em 2em 1em;
+  text-align: center;
+  background-color: $light;
+  .card:hover {
+    .overlay {
+    opacity: 1;
+    }
+  }
+  #projects-title {
+    margin: 0em 0em 2em 0em;
+  }
+  #more-projects {
+    margin: 2em 0em 0em 0em;
+  }
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $dark;
 }
 
 /*** TABLE ***/
@@ -118,4 +144,6 @@ html, body, .wrapper {
   background:rgba(255,255,255,0.5);
 
 }
+
+
 
