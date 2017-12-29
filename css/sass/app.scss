@@ -1,5 +1,6 @@
 @import "_breakpoint";
 @import "_fonts";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
 
 $dark: #1A2930;
 $light: #C5C1C0;
@@ -27,7 +28,8 @@ $dark-text: black;
   .filter-layer {
     width: 100%;
     height: 100%;
-    div {
+    .hero-text {
+      width: 100%;
       text-align: center;
       color: $light-text;
       .reserved-space {
@@ -64,6 +66,7 @@ html, body, .wrapper {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  font-family: 'Roboto', Helvetica, sans-serif;  
 }
 
 .flex-centered {
@@ -100,4 +103,19 @@ html, body, .wrapper {
   background-color: $gold;
 }
 
+
+/*** WHOLE PAGE ***/
+.whole-page {
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
+  background:rgba(255,255,255,0.5);
+
+}
 
