@@ -10,17 +10,6 @@ $dark-text: black;
 
 /*** NAVBAR ***/
 
-.custom-navbar {
-  background-color: transparent; 
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  width: 100%;
-  .container {
-    width: 100%;
-  }
-}
-
 .icon-ironman {
   background: url("../images/ironman.ico") no-repeat center;
   background-size: cover;
@@ -53,8 +42,6 @@ $dark-text: black;
 }
 
 .footer-icon, .footer-icon:hover{
-  padding: 0.5em;
-  text-decoration: none;
   color: inherit;
 }
 .footer-icon:hover {
@@ -65,24 +52,6 @@ $dark-text: black;
   width: 100%;
   padding: 2em 1em 2em 1em;
   background-color: $light;
-  .card:hover {
-    .overlay {
-      opacity: 1;
-    }
-  }
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: $dark;
 }
 
 /*** TABLE ***/
@@ -101,7 +70,7 @@ html, body, .wrapper {
   justify-content: center;
 }
 .filter-layer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
 }
 
@@ -110,9 +79,9 @@ html, body, .wrapper {
 }
 
 .btn-rounded {
-  padding: 1em 2em 1em 2em;
   border-radius: 5em;
 }
+
 
 /*** BACKGROUND ***/
 .bg-light {
@@ -127,7 +96,10 @@ html, body, .wrapper {
   background-size: cover;  
   background-color: $gold;
 }
-
+.bg-transparent {
+  background-size: cover;  
+  background-color: transparent;
+}
 
 /*** WHOLE PAGE ***/
 .whole-page {

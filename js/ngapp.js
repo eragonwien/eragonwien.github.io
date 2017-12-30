@@ -18,6 +18,10 @@ app.config(function($routeProvider){
         title: "contact - Nguyen",
         templateUrl: "contact.html"
     })
+    .when("/portfolio/ng-house", {
+        title: "NG-HOUSE - Nguyen",
+        templateUrl: "projects/ng-house.html"
+    })
     .otherwise({
         redirectTo: "/"
     });
