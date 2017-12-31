@@ -14,7 +14,7 @@ $dark-text: black;
   position: fixed;
   z-index: 2;
   top: 0px;
-  background-color: transparent;
+  background-color: rgba($dark, 0.5);
 }
 
 .icon-ironman {
@@ -86,6 +86,7 @@ html, body, .wrapper {
   align-items: center;
   justify-content: center;
 }
+
 .filter-layer {
   background-color: rgba($dark, 0.5);
   background-size: cover;
