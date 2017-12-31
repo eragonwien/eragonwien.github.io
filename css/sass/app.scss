@@ -9,6 +9,13 @@ $light-text: white;
 $dark-text: black;
 
 /*** NAVBAR ***/
+.transparent-navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  background-color: transparent;
+}
 
 .icon-ironman {
   background: url("../images/ironman.ico") no-repeat center;
@@ -56,6 +63,16 @@ $dark-text: black;
 
 /*** TABLE ***/
 /*** CONTACT ***/
+.overlay-full-page {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: $dark;
+  overflow-x: hidden; // disable horizontale scroll
+}
 /*** GENERAL ***/
 html, body, .wrapper {
   width: 100%;
@@ -70,7 +87,7 @@ html, body, .wrapper {
   justify-content: center;
 }
 .filter-layer {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($dark, 0.5);
   background-size: cover;
 }
 
