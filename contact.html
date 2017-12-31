@@ -1,34 +1,45 @@
-<div class="overlay-full-page flex-centered">
-    <div class="container text-light">
-        <h1 class="text-center">Contact me today</h1>
-        <p class="text-center text-muted">nguyennhoangson@gmail.com</p>
-        <form>
-            <div class="form-group">
-                <label for="contact-first-name">Full Name *</label>
-                <small class="form-text text-muted" id="contact-fullname-help">I would like to know who am I speaking with</small>
+<div class="overlay-full-page" ng-if="contactPressed">
+    <div class="container d-flex justify-content-center p-5 h-100 w-100 text-light" ng-init="contactIsSubmited = false">
+        <div class="contact-form" ng-hide="contactIsSubmited == true">
+            <h1 class="text-center">Contact me today</h1>
+            <p class="text-center text-muted">nguyennhoangson@gmail.com</p>
+            <form>
+                <div class="form-group">
+                    <label for="contact-first-name">Full Name *</label>
+                    <small class="form-text text-muted" id="contact-fullname-help">I would like to know who am I speaking with</small>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" id="contact-firstname" aria-describedby="contact-firstname-help">   
+                            <small class="form-text text-muted" id="contact-firstname-help">First Name</small>                                             
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" id="contact-lastname" aria-describedby="contact-lastname-help"> 
+                            <small class="form-text text-muted" id="contact-lastname-help">Last Name</small>                                
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-12 col-sm-6">
-                        <input type="text" class="form-control" id="contact-firstname" aria-describedby="contact-firstname-help">   
-                        <small class="form-text text-muted" id="contact-firstname-help">First Name</small>                                             
+                    <div class="col-12 form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" class="form-control" id="contact-email" aria-describedby="contact-email-help">    
                     </div>
-                    <div class="col-12 col-sm-6">
-                        <input type="text" class="form-control" id="contact-lastname" aria-describedby="contact-lastname-help"> 
-                        <small class="form-text text-muted" id="contact-lastname-help">Last Name</small>                                
+                    <div class="col-12 form-group">
+                        <label for="contact-comment">Your Message *</label>
+                        <small class="form-text text-muted" id="contact-comment-help">Send a message to my inbox</small>                                
+                        <textarea class="form-control" name="contact-comment" id="contact-comment" rows="1"></textarea>
                     </div>
                 </div>
+                <button type="submit" class="btn btn-outline-light rounded" ng-click="contactIsSubmited = true">Submit</button>
+                <small class="text-muted" id="submit-help">* Required</small>
+            </form>
+        </div>
+        <div class="contact-submitted text-center d-flex justify-content-center p-5" ng-hide="contactIsSubmited == false">
+            <div class="align-self-center"> 
+                <h1><i class="far fa-check-circle"></i> GREAT</h1>
+                <p>I will contact you as soon as possible. </p>
+                <a type="button" class="btn btn-outline-light rounded" ng-click="switchContact()" href="#"><i class="fas fa-arrow-left"></i> BACK</a>
             </div>
-            <div class="row">
-                <div class="col-12 form-group">
-                    <label for="contact-email">Email Address *</label>
-                    <input type="email" class="form-control" id="contact-email" aria-describedby="contact-email-help">    
-                </div>
-                <div class="col-12 form-group">
-                    <label for="contact-comment">Your Message *</label>
-                    <small class="form-text text-muted" id="contact-comment-help">Send a message to my inbox</small>                                
-                    <textarea class="form-control" name="contact-comment" id="contact-comment" rows="1"></textarea>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-outline-light rounded">Submit</button>
-          </form>
+            
+        </div>
     </div>
 </div>
