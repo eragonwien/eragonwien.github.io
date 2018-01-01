@@ -1,7 +1,9 @@
-<div class="overlay-full-page" ng-if="contactPressed">
-    <div class="container d-flex justify-content-center p-5 h-100 w-100 text-light" ng-init="contactIsSubmited = false">
+<div class="overlay-full-page flex-centered" ng-if="contactPressed">
+    <div class="container text-light" ng-init="contactIsSubmited = false">
         <div class="contact-form" ng-hide="contactIsSubmited == true">
-            <h1 class="text-center">Contact me today</h1>
+                <span class="close">&times;</span>
+            
+            <h3 class="text-center">Contact me today</h3>
             <p class="text-center text-muted">nguyennhoangson@gmail.com</p>
             <form>
                 <div class="form-group">
@@ -26,7 +28,7 @@
                     <div class="col-12 form-group">
                         <label for="contact-comment">Your Message *</label>
                         <small class="form-text text-muted" id="contact-comment-help">Send a message to my inbox</small>                                
-                        <textarea class="form-control" name="contact-comment" id="contact-comment" rows="1"></textarea>
+                        <textarea class="form-control" name="contact-comment" id="contact-comment" rows="3"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-light rounded" ng-click="contactIsSubmited = true">Submit</button>
