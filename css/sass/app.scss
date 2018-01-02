@@ -12,22 +12,10 @@ $dark-text: black;
 /*** NAVBAR ***/
 .transparent-navbar {
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   top: 0px;
-  background-color: rgba($dark, 0.5);
-}
-
-.icon-ironman {
-  background: url("../images/ironman.ico") no-repeat center;
-  background-size: cover;
-  width: 2em;
-  height: 2em;
-}
-
-.icon-dragon {
-  background: url("../images/dragon.png") no-repeat center;
-  background-size: contain;
+  background: transparent;
 }
 
 /*** HERO IMAGE ***/
