@@ -1,29 +1,54 @@
 @import "_breakpoint";
 html {
-    font-size: 1rem;
+    a, p {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }   
 }
 
 @include breakpoint(sm) {
     html {
-        font-size: 1.2rem;
+        a, p {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+        }  
     }
 }
 
 @include breakpoint(md) {
     html {
-        font-size: 1.2rem;
+        a, p {
+            font-size: 1.2rem;
+        }
+        h1 {
+            font-size: 5rem;
+        }  
     }
 }
 
 @include breakpoint(lg) {
     html {
-        font-size: 1.2rem;
+        a, p {
+            font-size: 1.3rem;
+        }
+        h1 {
+            font-size: 5rem;
+        }  
     }
 }
 
 @include breakpoint(xl) {
     html {
-        font-size: 1.2rem;
+        a, p {
+            font-size: 1.4rem;
+        }
+        h1 {
+            font-size: 5rem;
+        }  
     }
 }
 

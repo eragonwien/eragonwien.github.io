@@ -1,34 +1,55 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto");
-/* line 2, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
-html {
+/* line 3, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+html a, html p {
   font-size: 1rem;
 }
 
+/* line 6, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+html h1 {
+  font-size: 3.5rem;
+}
+
 @media (min-width: 576px) {
-  /* line 7, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
-  html {
-    font-size: 1.2rem;
+  /* line 13, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html a, html p {
+    font-size: 1rem;
+  }
+  /* line 16, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html h1 {
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 13, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
-  html {
+  /* line 24, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html a, html p {
     font-size: 1.2rem;
+  }
+  /* line 27, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html h1 {
+    font-size: 5rem;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 19, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
-  html {
-    font-size: 1.2rem;
+  /* line 35, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html a, html p {
+    font-size: 1.3rem;
+  }
+  /* line 38, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html h1 {
+    font-size: 5rem;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 25, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
-  html {
-    font-size: 1.2rem;
+  /* line 46, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html a, html p {
+    font-size: 1.4rem;
+  }
+  /* line 49, C:/Setup/xampp/htdocs/eragonwien/css/sass/_media_queries.scss */
+  html h1 {
+    font-size: 5rem;
   }
 }
 
@@ -46,7 +67,7 @@ html {
 /* line 22, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .hero-img {
   width: 100%;
-  height: 100%;
+  height: 75%;
 }
 
 /* line 25, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
@@ -168,6 +189,33 @@ html, body, .wrapper {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
+}
+
+/* ANIMATION */
+/* line 127, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.fade-animation {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+/* line 132, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.fade-animation.ng-enter {
+  opacity: 0;
+}
+
+/* line 136, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.fade-animation.ng-leave {
+  opacity: 1;
+}
+
+/* line 140, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.fade-animation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+/* line 144, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.fade-animation.ng-leave.ng-leave-active {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=../app.map */
