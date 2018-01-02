@@ -1,31 +1,36 @@
-var app = angular.module('eragonwien', ['ngRoute']);
+var app = angular.module('eragonwien', ['ngRoute','ngAnimate']);
 
 /* ROUTING */
 app.config(function($routeProvider){
     $routeProvider
     .when('/', {
-        title: 'Start - Nguyen',
+        title: 'Home - Nguyen',
         templateUrl: 'overview.html',
-        controller: 'maincontroller'
+        controller: 'homecontroller',
+        controllerAs: 'ctrl'
     })
     .when('/portfolio', {
         title: 'Portfolio - Nguyen',            
         templateUrl: 'portfolio.html',
-        controller: 'maincontroller'
+        controller: 'maincontroller',
+        controllerAs: 'ctrl'
     })
     .when('/resume', {
         title: 'Resume - Nguyen',
         templateUrl: 'resume.html',
-        controller: 'maincontroller'
+        controller: 'maincontroller',
+        controllerAs: 'ctrl'
     })
     .when('/portfolio/ng-house', {
         title: 'NG-HOUSE - Nguyen',
         templateUrl: 'projects/ng-house.html',
-        controller: 'maincontroller'
+        controller: 'maincontroller',
+        controllerAs: 'ctrl'
     })
     .otherwise({
         redirectTo: '/',
-        controller: 'maincontroller'
+        controller: 'maincontroller',
+        controllerAs: 'ctrl'
     });
 });
 

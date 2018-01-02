@@ -11,5 +11,5 @@ app.controller('maincontroller', ['$scope', 'mainservice', function (scope, main
         if (!scope.contactPressed) {
             scope.contact = {};
         }
-    }
+    };
 }]);
