@@ -1,8 +1,7 @@
 <div class="overlay-full-page flex-centered" ng-if="contactPressed">
     <div class="container text-light" ng-init="contactIsSubmited = false">
+        <span class="close" ng-click="switchContact()"><i class="fas fa-window-close"></i></span>
         <div class="contact-form" ng-hide="contactIsSubmited == true">
-                <span class="close">&times;</span>
-            
             <h3 class="text-center">Contact me today</h3>
             <p class="text-center text-muted">nguyennhoangson@gmail.com</p>
             <form>
@@ -39,7 +38,7 @@
             <div class="align-self-center"> 
                 <h1><i class="far fa-check-circle"></i> GREAT</h1>
                 <p>I will contact you as soon as possible. </p>
-                <a type="button" class="btn btn-outline-light rounded" ng-click="switchContact()" href="#"><i class="fas fa-arrow-left"></i> BACK</a>
+                <a class="btn btn-outline-light rounded" ng-click="switchContact()" href="#"><i class="fas fa-arrow-left"></i> BACK</a>
             </div>
             
         </div>
