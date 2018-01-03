@@ -218,4 +218,61 @@ html, body, .wrapper {
   opacity: 0;
 }
 
+/* BLINKING CURSOR ANIMATION */
+/* line 149, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+.blinking-cursor {
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes blink {
+  /* line 186, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  from, to {
+    color: transparent;
+  }
+  /* line 189, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
 /*# sourceMappingURL=../app.map */
