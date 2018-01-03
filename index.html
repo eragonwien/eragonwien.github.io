@@ -13,10 +13,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Nguyen Hoang Son</title>
 </head>
-<body ng-app="eragonwien" ng-controller="maincontroller as ctrl">
-    <div ng-include="'navbar.html'"></div>
+<body ng-app="eragonwien" ng-controller="mastercontroller as master">
+    <div ng-include="'navbar.html'" ng-controller="navbarcontroller as nav"></div>
     <div class="wrapper" ng-view></div>
-    <div ng-include="'contact.html'"></div>
     
     <!-- jQuery library -->
     <!--script src="import/jquery/jquery-3.2.1.min.js"></script-->
@@ -47,6 +46,8 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/homecontroller.js"></script>
     <script type="text/javascript" src="js/maincontroller.js"></script>
+    <script type="text/javascript" src="js/mastercontroller.js"></script>
+    <script type="text/javascript" src="js/navbarcontroller.js"></script>
     <script type="text/javascript" src="js/mainservice.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>

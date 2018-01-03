@@ -5,32 +5,32 @@ app.config(function($routeProvider){
     $routeProvider
     .when('/', {
         title: 'Home - Nguyen',
-        templateUrl: 'overview.html',
+        templateUrl: 'home.html',
         controller: 'homecontroller',
-        controllerAs: 'ctrl'
+        controllerAs: 'home'
     })
     .when('/portfolio', {
         title: 'Portfolio - Nguyen',            
         templateUrl: 'portfolio.html',
         controller: 'maincontroller',
-        controllerAs: 'ctrl'
+        controllerAs: 'main'
     })
     .when('/resume', {
         title: 'Resume - Nguyen',
         templateUrl: 'resume.html',
         controller: 'maincontroller',
-        controllerAs: 'ctrl'
+        controllerAs: 'main'
     })
     .when('/portfolio/ng-house', {
         title: 'NG-HOUSE - Nguyen',
         templateUrl: 'projects/ng-house.html',
         controller: 'maincontroller',
-        controllerAs: 'ctrl'
+        controllerAs: 'main'
     })
     .otherwise({
         redirectTo: '/',
         controller: 'maincontroller',
-        controllerAs: 'ctrl'
+        controllerAs: 'main'
     });
 });
 
