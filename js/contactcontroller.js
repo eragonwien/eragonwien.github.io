@@ -1,14 +1,20 @@
 var app = angular.module('eragonwien');
 
-app.controller('navbarcontroller', navbarcontroller);
+app.controller('contactcontroller', ['mainservice', contactcontroller]);
 
-function navbarcontroller() {
-    console.log("NAV");
+function contactcontroller(mainservice) {
+    console.log("CONTACT");
     var self = this;
+
     self.contactPressed = false;
     self.contact = {};
     self.switchContact = switchContact;
-    
+    self.sendContact = function (contact) {
+        console.log("send");
+        console.log(self.contact);
+    };
+
+
     // ENABLE/ DIABLE CONTACT DIALOG
     function switchContact() {
         console.log("SW");

@@ -8,7 +8,11 @@ function mainservice() {
         "responsive website.",
         "mobile-friendly UX.",
         "web application."
-    ]
+    ];
+
+    self.sendContact = function (contact) {
+        console.log(contact);
+    }
 
     return self;
     

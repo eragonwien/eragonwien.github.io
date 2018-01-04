@@ -1,46 +1,61 @@
-<div class="overlay-full-page flex-centered fade-animation" ng-if="nav.contactPressed">
-    <div class="container text-light" ng-init="contactIsSubmited = false">
-        <span class="close" ng-click="nav.switchContact()"><i class="fas fa-window-close"></i></span>
-        <div class="contact-form" ng-hide="contactIsSubmited == true">
-            <h3 class="text-center">Contact me today</h3>
-            <p class="text-center text-muted">nguyennhoangson@gmail.com</p>
-            <form>
-                <div class="form-group">
-                    <label for="contact-first-name">Full Name *</label>
-                    <small class="form-text text-muted" id="contact-fullname-help">I would like to know who am I speaking with</small>
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" id="contact-firstname" aria-describedby="contact-firstname-help">   
-                            <small class="form-text text-muted" id="contact-firstname-help">First Name</small>                                             
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="text" class="form-control" id="contact-lastname" aria-describedby="contact-lastname-help"> 
-                            <small class="form-text text-muted" id="contact-lastname-help">Last Name</small>                                
-                        </div>
-                    </div>
+<div class="jumbotron jumbotron-fluid"
+    style="background: rgb(95, 95, 95) url('images/test.jpg') no-repeat center; background-size: cover; background-blend-mode: overlay;">
+    <div class="container py-5">
+        <h1 class="display-4 text-white">Contact me</h1>        
+        <p class="text-white">nguyennhoangson@gmail.com</p>
+    </div>
+</div>
+
+<div class="container" ng-init="contactSubmited = false">
+    <form class="contact-form" ng-hide="contactSubmited">
+        <div class="form-group">
+            <label for="contact-first-name">Full Name *</label>
+            <small class="form-text text-muted" id="contact-fullname-help">I would like to know who am I speaking with</small>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <small class="form-text text-muted" id="contact-firstname-help">First Name</small>                                             
+                    <input type="text" class="form-control" id="contact-firstname" 
+                        ng-model="cc.contact.firstname" aria-describedby="contact-firstname-help">   
                 </div>
-                <div class="row">
-                    <div class="col-12 form-group">
-                        <label for="contact-email">Email Address *</label>
-                        <input type="email" class="form-control" id="contact-email" aria-describedby="contact-email-help">    
-                    </div>
-                    <div class="col-12 form-group">
-                        <label for="contact-comment">Your Message *</label>
-                        <small class="form-text text-muted" id="contact-comment-help">Send a message to my inbox</small>                                
-                        <textarea class="form-control" name="contact-comment" id="contact-comment" rows="3"></textarea>
-                    </div>
+                <div class="col-12 col-sm-6">
+                    <small class="form-text text-muted" id="contact-lastname-help">Last Name</small>                                                    
+                    <input type="text" class="form-control" id="contact-lastname" 
+                        ng-model="cc.contact.lastname" aria-describedby="contact-lastname-help"> 
                 </div>
-                <button type="submit" class="btn btn-outline-light rounded" ng-click="contactIsSubmited = true">Submit</button>
-                <small class="text-muted" id="submit-help">* Required</small>
-            </form>
-        </div>
-        <div class="contact-submitted text-center d-flex justify-content-center p-5" ng-hide="contactIsSubmited == false">
-            <div class="align-self-center"> 
-                <h1><i class="far fa-check-circle"></i> GREAT</h1>
-                <p>I will contact you as soon as possible. </p>
-                <a class="btn btn-outline-light rounded" ng-click="nav.switchContact()" href="#"><i class="fas fa-arrow-left"></i> BACK</a>
             </div>
-            
+        </div>
+        <div class="row">
+            <div class="col-12 form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" class="form-control" id="contact-email" 
+                    ng-model="cc.contact.email" aria-describedby="contact-email-help">    
+            </div>
+            <div class="col-12 form-group">
+                <label for="contact-comment">Your Message *</label>
+                <small class="form-text text-muted" id="contact-comment-help">Send a message to my inbox</small>                                
+                <textarea class="form-control" name="contact-comment" id="contact-comment" 
+                    ng-model="cc.contact.comment" rows="3"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-outline-dark rounded" 
+            ng-click="contactSubmited = true; cc.sendContact(cc.contact);">Submit</button>
+        <small class="text-muted" id="submit-help">* Required</small>
+    </form>
+
+    <div class="contact-submitted text-center d-flex justify-content-center p-5" ng-show="contactSubmited">
+        <div class="align-self-center"> 
+            <h1><i class="far fa-check-circle"></i> GREAT</h1>
+            <p>I will contact you as soon as possible. </p>
+            <a class="btn btn-outline-dark rounded" ng-click="contactSubmited = false" href="#"><i class="fas fa-arrow-left"></i> BACK</a>
         </div>
     </div>
 </div>
+
+<div ng-include="'footer.html'"></div>
+
+
+
+
+
+
+

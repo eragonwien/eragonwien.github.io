@@ -21,6 +21,12 @@ app.config(function($routeProvider){
         controller: 'maincontroller',
         controllerAs: 'main'
     })
+    .when('/contact', {
+        title: 'Contact - Nguyen',
+        templateUrl: 'contact.html',
+        controller: 'contactcontroller',
+        controllerAs: 'cc'
+    })
     .when('/portfolio/ng-house', {
         title: 'NG-HOUSE - Nguyen',
         templateUrl: 'projects/ng-house.html',
