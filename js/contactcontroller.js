@@ -6,21 +6,22 @@ function contactcontroller(mainservice) {
     console.log("CONTACT");
     var self = this;
 
-    self.contactPressed = false;
+    self.submiting = true;
+    self.success = false;
     self.contact = {};
-    self.switchContact = switchContact;
-    self.sendContact = function (contact) {
-        console.log("send");
+    self.close = close;
+    self.sendContact = sendContact;
+    
+    function sendContact(contact) {
         console.log(self.contact);
-    };
-
-
-    // ENABLE/ DIABLE CONTACT DIALOG
-    function switchContact() {
-        console.log("SW");
-        self.contactPressed = !(self.contactPressed);
-        if (!self.contactPressed) {
-            self.contact = {};
+        if (self.contact) {
+            self.submiting = false;
+            self.success = true;
         }
-    };;
+    }
+
+    function close() {
+        self.submiting = true;
+        self.success = false;
+    }
 }
