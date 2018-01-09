@@ -11,14 +11,14 @@
   position: absolute;
   top: 0px;
   z-index: 2;
-  background-color: #1A2930;
+  background-color: transparent;
 }
 
 /*** HERO ***/
 /* line 19, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .hero-img {
   width: 100%;
-  height: 75%;
+  height: 100%;
   margin: 0em 0em 2em 0em;
   font-weight: 900;
   text-shadow: 0px 0px 3px #000;
@@ -179,7 +179,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -188,7 +188,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -199,7 +199,7 @@ html, body, .wrapper {
   }
   /* line 173, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -208,7 +208,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 

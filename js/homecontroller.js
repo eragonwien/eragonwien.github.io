@@ -3,7 +3,6 @@ var app = angular.module('eragonwien');
 app.controller('homecontroller', ['mainservice', '$timeout', homecontroller]);
 
 function homecontroller(mainservice, timeout) {
-    console.log("HOME");
     var self = this;
     // TYPEWRITER EFFECT
     self.text = "";

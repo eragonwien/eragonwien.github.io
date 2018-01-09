@@ -11,7 +11,7 @@ function mainservice() {
     ];
 
     self.sendContact = function (contact) {
-        console.log(contact);
+        
     }
 
     return self;

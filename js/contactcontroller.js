@@ -3,7 +3,6 @@ var app = angular.module('eragonwien');
 app.controller('contactcontroller', ['mainservice', contactcontroller]);
 
 function contactcontroller(mainservice) {
-    console.log("CONTACT");
     var self = this;
 
     self.submiting = true;
