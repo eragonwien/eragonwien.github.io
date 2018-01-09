@@ -20,27 +20,29 @@
   width: 100%;
   height: 75%;
   margin: 0em 0em 2em 0em;
+  font-weight: 900;
+  text-shadow: 0px 0px 3px #000;
 }
 
 /*** FOOTER ***/
-/* line 27, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 29, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .footer {
   width: 100%;
   padding: 2em 0em 2em 0em;
 }
 
-/* line 32, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 34, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .footer-icon, .footer-icon:hover {
   color: inherit;
 }
 
-/* line 35, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 37, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .footer-icon:hover {
   opacity: 0.7;
 }
 
 /*** PROJECTS ***/
-/* line 39, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 41, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .projects {
   width: 100%;
   padding: 2em 1em 2em 1em;
@@ -48,7 +50,7 @@
 }
 
 /*** CONTACT ***/
-/* line 45, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 47, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .overlay-full-page {
   height: 100%;
   width: 100%;
@@ -61,60 +63,60 @@
 }
 
 /*** GENERAL ***/
-/* line 56, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 58, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 html, body, .wrapper {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-/* line 62, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 64, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .flex-centered, .hero-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 68, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 70, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .filter-layer {
   background-color: rgba(26, 41, 48, 0.5);
   background-size: cover;
 }
 
-/* line 73, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 75, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .shadow-layer, .hero-img {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
-/* line 77, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 79, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .gray-filter {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 81, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 83, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .bg-home {
   background-image: url("../images/home.jpg");
 }
 
-/* line 84, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 86, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .bg-portfolio {
   background-image: url("../images/portfolio.jpg");
 }
 
-/* line 87, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 89, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .bg-resume {
   background-image: url("../images/resume.jpg");
 }
 
-/* line 90, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 92, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .bg-contact {
   background-image: url("../images/contact.jpg");
 }
 
 /*** WHOLE PAGE ***/
-/* line 94, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 96, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .whole-page {
   position: fixed;
   padding: 0;
@@ -127,34 +129,34 @@ html, body, .wrapper {
 }
 
 /* ANIMATION */
-/* line 109, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 111, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .fade-animation {
   -webkit-transition: 1s;
   transition: 0.5s;
 }
 
-/* line 114, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 116, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .fade-animation.ng-enter {
   opacity: 0;
 }
 
-/* line 118, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 120, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .fade-animation.ng-leave {
   opacity: 1;
 }
 
-/* line 122, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 124, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .fade-animation.ng-enter.ng-enter-active {
   opacity: 1;
 }
 
-/* line 126, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 128, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .fade-animation.ng-leave.ng-leave-active {
   opacity: 0;
 }
 
 /* BLINKING CURSOR ANIMATION */
-/* line 131, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 133, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .blinking-cursor {
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -191,11 +193,11 @@ html, body, .wrapper {
 }
 
 @-ms-keyframes blink {
-  /* line 168, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 170, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   from, to {
     color: transparent;
   }
-  /* line 171, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 173, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   50% {
     color: black;
   }
@@ -211,52 +213,52 @@ html, body, .wrapper {
 }
 
 /* MEDIA QUERY */
-/* line 187, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 189, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 html a, html p {
   font-size: 1rem;
 }
 
-/* line 190, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+/* line 192, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 html h1 {
   font-size: 3.5rem;
 }
 
 @media (min-width: 768px) {
-  /* line 197, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 199, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html a, html p {
     font-size: 1rem;
   }
-  /* line 200, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 202, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html h1 {
     font-size: 3.5rem;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 207, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 209, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html a, html p {
     font-size: 1.2rem;
   }
-  /* line 210, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 212, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html h1 {
     font-size: 5rem;
   }
-  /* line 213, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 215, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html .top-navbar .nav-links a {
     display: block;
   }
-  /* line 216, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 218, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html .top-navbar .nav-links .navbar-icon {
     display: none;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 223, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 225, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html a, html p {
     font-size: 1.3rem;
   }
-  /* line 226, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
+  /* line 228, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
   html h1 {
     font-size: 5rem;
   }
