@@ -12,8 +12,15 @@ $dark-text: black;
   width: 100%;
   position: absolute;
   top: 0px;
+  left: 0px;
+  right: 0px;
   z-index: 2;
-  background-color: transparent;
+  background-color: $light;
+}
+.navbar {
+  .active, .nav-item:hover {
+    background-color: $gold;
+  }
 }
 /*** HERO ***/
 .hero-img {
@@ -42,6 +49,13 @@ $dark-text: black;
   width: 100%;
   padding: 2em 1em 2em 1em;
   background-color: $light;
+}
+.project-card {
+  border: 2px solid rgba($dark, 0.2);
+}
+
+.project-card:hover {
+  box-shadow: 0px 4px 8px 4px $dark;
 }
 /*** CONTACT ***/
 .overlay-full-page {
@@ -91,6 +105,10 @@ html, body, .wrapper {
 }
 .bg-contact {
   @include background(contact);
+}
+
+.bg-gold {
+  background-color: $gold;
 }
 /*** WHOLE PAGE ***/
 .whole-page {
@@ -144,7 +162,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: white;
+    color: black;
   }
 }
 
@@ -153,7 +171,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: white;
+    color: black;
   }
 }
 
@@ -162,7 +180,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: white;
+    color: black;
   }
 }
 
@@ -171,7 +189,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: white;
+    color: black;
   }
 }
 
@@ -180,7 +198,7 @@ html, body, .wrapper {
     color: transparent;
   }
   50% {
-    color: white;
+    color: black;
   }
 }
 
