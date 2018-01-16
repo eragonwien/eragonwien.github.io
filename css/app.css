@@ -18,7 +18,7 @@
 
 /* line 21, C:/Setup/xampp/htdocs/eragonwien/css/sass/app.scss */
 .navbar .active, .navbar .nav-item:hover {
-  background-color: #F7CE3E;
+  background-color: lightgray;
 }
 
 /*** HERO ***/
