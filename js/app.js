@@ -1,7 +1,7 @@
 var app = angular.module('eragonwien', ['ngRoute','ngAnimate']);
 
 /* ROUTING */
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
     $routeProvider
     .when('/', {
         title: 'Home - Nguyen',
@@ -38,6 +38,7 @@ app.config(function($routeProvider){
         controller: 'maincontroller',
         controllerAs: 'main'
     });
+    $locationProvider.html5Mode(true);
 });
 
 /* CHANGE TITLE BASED ON ROUTE */
