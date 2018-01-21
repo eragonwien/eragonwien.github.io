@@ -1,0 +1,19 @@
+button, .button {
+    padding: 0.5em 0.5em;    
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+.focus-button {
+    padding: 0.5em 0.5em;    
+    background-color: $gold;
+    border: 2px solid black;
+    color: black;
+}
+button:hover, .button:hover, .focus-button:hover {
+    background-color: black;
+    color: $gold;
+}
+.button-lg {
+    padding: 1em 1em;
+}

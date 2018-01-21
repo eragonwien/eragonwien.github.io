@@ -1,0 +1,22 @@
+.listing {
+    h2 {
+        text-align: center;
+        margin: 1em 0em;
+        border-bottom: solid black;
+    }
+    .listing-row {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        border-bottom: 1px solid black;
+        padding: 1em 0em;
+        .row-head {
+            font-weight: bolder;
+        }
+        .row-body {
+            dt {
+                font-weight: bold;
+            }
+        }
+    }
+}

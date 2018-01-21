@@ -26,11 +26,11 @@
     }
     .closeBtn:hover {
         background-color: transparent;
-        color: white;
+        color: $gold;
     }
 }
 .navbar {
-    display: flex;
+    position: fixed;
     background-color: white;
     a {
         display: inline-block;
@@ -48,6 +48,7 @@
         display: inline-block;
         background-color: transparent;
         color: black;
+        padding: 0.5em 1em;
         border: none;
         cursor: pointer;
     }

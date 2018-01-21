@@ -9,14 +9,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    button {
-        padding: 1em 1em;
-        margin: 2em 0em;
-        background-color: transparent;
-        border: 2px solid black;
-    }
-    button:hover {
-        background-color: black;
-        color: $gold;
+    p {
+        margin-bottom: 1em;
     }
 }

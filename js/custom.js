@@ -11,5 +11,6 @@ function scrollToTop() {
 
 function scrollToView(link) {
     document.getElementById(link).scrollIntoView({block: "start", behavior: "smooth"});
+    closeSideNav();
 }
 
