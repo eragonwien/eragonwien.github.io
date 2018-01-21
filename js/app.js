@@ -1,6 +1,6 @@
 var app = angular.module('eragonwien', ['ngRoute','ngAnimate']);
 
-/* ROUTING */
+/* ROUTING 
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
     .when('/', {
@@ -41,7 +41,7 @@ app.config(function($routeProvider, $locationProvider){
     $locationProvider.html5Mode(true);
 });
 
-/* CHANGE TITLE BASED ON ROUTE */
+/* CHANGE TITLE BASED ON ROUTE 
 app.run(['$rootScope', '$route', function($rootScope, $route) {
     $rootScope.$on('$routeChangeSuccess', function() {
         document.title = $route.current.title;
@@ -53,3 +53,5 @@ function scrollTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+*/

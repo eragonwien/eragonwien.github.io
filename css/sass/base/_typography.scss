@@ -1,0 +1,84 @@
+/* FONT */
+html {
+    font-family: 'Raleway', sans-serif;
+}
+/* FONT SIZE */
+html {
+    a, p, button {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }   
+    h2 {
+        font-size: 3rem;
+    }
+    .sidenav, .navbar {
+        font-size: 2rem;
+    }
+}
+  
+@include breakpoint(sm) {
+    html {
+        a, p, button {
+            font-size: 1rem;
+        }
+        h1 {
+              font-size: 3.5rem;
+        }  
+        h2 {
+            font-size: 3rem;
+        }
+        .sidenav, .navbar {
+            font-size: 2rem;
+        }
+    }   
+}
+@include breakpoint(md) {
+    html {
+        a, p, button {
+           font-size: 1.2rem;
+        }
+        h1 {
+            font-size: 5rem;
+        }  
+        h2 {
+            font-size: 4.5rem;
+        }
+        .sidenav, .navbar {
+            font-size: 2rem;
+        }
+    }
+}
+@include breakpoint(lg) {
+    html {
+        a, p, button {
+              font-size: 1.6rem;
+        }
+        h1 {
+            font-size: 5rem;
+        }  
+        h2 {
+            font-size: 4.5rem;
+        }
+        .sidenav, .navbar {
+            font-size: 2rem;
+        }
+    }
+}
+@include breakpoint(xl) {
+    html {
+        a, p, button {
+            font-size: 1.8rem;
+        }
+        h1 {
+            font-size: 5rem;
+        }  
+        h2 {
+            font-size: 4.5rem;
+        }
+        .sidenav, .navbar {
+            font-size: 2rem;
+        }
+    }
+}

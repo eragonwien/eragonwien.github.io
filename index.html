@@ -10,34 +10,68 @@
     <meta name="page-type" content="Private Homepage">
     <meta name="audience" content="Alle"><meta http-equiv="content-language" content="en">
     <meta name="robots" content="index, follow">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <meta name="description" content="Portfolio of Hoang Son Nguyen">
+    <meta name="keywords" content="portfolio, programming, it, computer science, software, developer">
     <!--CUSTOM CSS-->
     <link rel="stylesheet" type="text/css" href="css/app.css">
-    <!--GOOGLE FONT-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
     <!--ICON-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <base href="/">
-    <title>Nguyen Hoang Son</title>
+    <title>Nguyen's Portfolio</title>
 </head>
 <body ng-app="eragonwien" ng-controller="mastercontroller as master">
-    <div ng-include="'navbar.html'"></div>
-    <div class="wrapper" ng-view></div>
     
-    <!-- jQuery library -->
-    <!--script src="import/jquery/jquery-3.2.1.min.js"></script-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    
-    <!-- Popper JS -->
-    <!--script src="import/popper.js"></script-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    
-    <!-- Bootstrap JavaScript -->
-    <!--script src="import/bootstrap/js/bootstrap.min.js"></script-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <button onclick="openSideNav()"><i class="fas fa-bars"></i> Navigation</button>
+        <!--a href=""><i class="fas fa-bars" onclick="openSideNav()"></i></a-->
+        <a href="" onclick="scrollTop()">NGUYEN HOANG SON</a>
+    </nav>
+    <nav class="sidenav" id="sidenav">
+        <a href="" class="closeBtn" onclick="closeSideNav()"><i class="fas fa-times-circle"></i></i></a>
+        <a href="" onclick="scrollTop()">Home</a>
+        <a href="" onclick="scrollToView('portfolio')">Portfolio</a>
+        <a href="" onclick="scrollTop()">About</a>
+        <a href="" onclick="scrollTop()">Contact</a>
+    </nav>
 
+    <!-- HERO IMAGE -->
+    <section class="hero-img" id="home" ng-cloak>
+        <div class="hero-text">
+            <h1>Hello, I'm Son</h1>
+            <p>I am a junior web developer</p>
+            <button>I'm available for hire</button>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Projects</h2>
+        <div class="row">
+            <div class="col">
+                <div class="project">
+                    <img src="images/test.jpg" alt="project_image">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project">
+                    <img src="images/test.jpg" alt="project_image">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project">
+                    <img src="images/test.jpg" alt="project_image">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project">
+                    <img src="images/test.jpg" alt="project_image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="" onclick="scrollToTop()">NGUYEN HOANG SON</a>
     <!-- Font Awesome -->
     <!--script defer src="import/fontawesome-all.js"></script-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
@@ -45,15 +79,13 @@
     <!-- ANGULAR CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-resource.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/mastercontroller.js"></script>
-    <script type="text/javascript" src="js/homecontroller.js"></script>
-    <script type="text/javascript" src="js/maincontroller.js"></script>
-    <script type="text/javascript" src="js/contactcontroller.js"></script>
-    <script type="text/javascript" src="js/mainservice.js"></script>
-    <script defer type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-  </body>
+
+    <!-- ANGULAR SCRIPTS -->
+    <script src="js/app.js" type="text/javascript"></script>    
+    <script src="js/controllers/mastercontroller.js" type="text/javascript"></script>
+
+    <!-- CUSTOM JS -->
+    <script async src="js/custom.js" type="text/javascript"></script>        
+</body>
 </html>

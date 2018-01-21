@@ -16,15 +16,6 @@
   }
 }
 
-@mixin gray-filter($value) {
-  -webkit-filter: grayscale($value);
-  filter: grayscale($value);
-}
-@mixin sepia-filter($value) {
-  -webkit-filter: sepia($value);
-  filter: sepia($value);
-}
-
 .bg-img, %bg-img {
   background: no-repeat center center;
   background-size: cover;
