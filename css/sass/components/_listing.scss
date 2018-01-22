@@ -1,8 +1,12 @@
 .listing {
     h2 {
         text-align: center;
-        margin: 1em 0em;
+        margin: 0.5em 0em 0em 0em;
         border-bottom: solid black;
+    }
+    .resume-download {
+        text-align: center;
+        padding: 1em 0 2em 0;
     }
     .listing-row {
         display: flex;

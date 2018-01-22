@@ -20,7 +20,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Nguyen's Portfolio</title>
 </head>
-<body ng-app="eragonwien" ng-controller="mastercontroller as master">
+<body ng-app="eragonwien">
     
     <!-- NAVBAR -->
     <nav class="navbar" id="navbar">
@@ -29,7 +29,7 @@
         <!--a href="" onclick="scrollTop()">NGUYEN HOANG SON</a-->
     </nav>
     <nav class="sidenav" id="sidenav">
-        <a href="" class="closeBtn" onclick="closeSideNav()"><i class="fas fa-times-circle"></i></i></a>
+        <a href="" class="closeBtn" onclick="closeSideNav()">close <i class="fas fa-times-circle"></i></a>
         <a href="" onclick="scrollToView('home')">Home</a>
         <a href="" onclick="scrollToView('portfolio')">Portfolio</a>
         <a href="" onclick="scrollToView('resume')">Resume</a>
@@ -66,20 +66,24 @@
     <!-- RESUME -->
     <section class="listing" id="resume">
         <h2>My Resume</h2>
+        <form class="resume-download" action="pdf/resume.pdf" method="get">
+            <button class="focus-button" type="submit">VIEW</button>
+            <a class="button" href="pdf/resume.pdf" target="_blank" download>DOWNLOAD</a>
+        </form>
         <div class="listing-row">
             <div class="row-head">
                 <h3>Technologies</h3>
             </div>
             <div class="row-body">
-                <dl>
-                    <dd>HTML &middot CSS &middot Javascript</dd>
-                    <dd>Bootstrap &middot SASS &middot Jquery</dd>
-                    <dd>MySQL &middot MongoDB</dd>
-                    <dd>NodeJS &middot ExpressJS &middot AngularJS</dd>
-                    <dd>Gulp &middot NPM</dd>
-                    <dd>Java/JavaEE &middot Tomcat &middot Maven</dd>
-                    <dd>Eclipse &middot Visual Studio 2017 &middot VS Code &middot Inkscape</dd>
-                </dl>
+                <ul>
+                    <li>HTML &middot CSS &middot Javascript</li>
+                    <li>Bootstrap &middot SASS &middot Jquery</li>
+                    <li>MySQL &middot MongoDB</li>
+                    <li>NodeJS &middot ExpressJS &middot AngularJS</li>
+                    <li>Gulp &middot NPM</li>
+                    <li>Java/JavaEE &middot Tomcat &middot Maven</li>
+                    <li>Eclipse &middot Visual Studio 2017 &middot VS Code &middot Inkscape</li>
+                </ul>
             </div>
         </div>
         <div class="listing-row">
@@ -113,7 +117,7 @@
     </section>
 
     <!-- CONTACT -->
-    <form class="forms" id="contact" action="" method="post">
+    <form class="forms" id="contact" action="#" method="post">
         <div class="form-title">
             <h2>Contact</h2>
             <p>nguyennhoangson@gmail.com</p>
@@ -145,12 +149,9 @@
 
     <!-- ANGULAR CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
 
     <!-- ANGULAR SCRIPTS -->
     <script src="js/app.js" type="text/javascript"></script>    
-    <script src="js/controllers/mastercontroller.js" type="text/javascript"></script>
 
     <!-- CUSTOM JS -->
     <script async src="js/custom.js" type="text/javascript"></script>        

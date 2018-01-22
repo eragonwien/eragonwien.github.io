@@ -1,5 +1,5 @@
 function openSideNav() {
-    document.getElementById("sidenav").style.width = "40%";
+    document.getElementById("sidenav").style.width = "80%";
 }
 function closeSideNav() {
     document.getElementById("sidenav").style.width = "0%";    
@@ -14,3 +14,4 @@ function scrollToView(link) {
     closeSideNav();
 }
 
+document.body.addEventListener('touchstart', {passive: true});
