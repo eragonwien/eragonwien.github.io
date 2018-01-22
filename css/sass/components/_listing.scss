@@ -7,16 +7,42 @@
     .listing-row {
         display: flex;
         flex-wrap: nowrap;
+        flex-direction: column;
         align-content: flex-start;
         border-bottom: 1px solid black;
-        padding: 1em 0em;
-        .row-head {
-            font-weight: bolder;
+        padding: 0em 1em 1em 1em;  
+    }
+}
+
+.listing .listing-row {
+    .row-head {
+        font-weight: bolder;
+    }
+    .row-body {
+        dt {
+            font-weight: bold;
         }
-        .row-body {
-            dt {
-                font-weight: bold;
-            }
+        dd {
+            text-align: justify;
         }
+    }
+}
+
+@include breakpoint(sm) {
+
+}
+@include breakpoint(md) {
+    .listing .listing-row {
+        flex-direction: row;
+    }
+}
+@include breakpoint(lg) {
+    .listing .listing-row {
+        flex-direction: row;
+    }
+}
+@include breakpoint(xl) {
+    .listing .listing-row {
+        flex-direction: row;
     }
 }

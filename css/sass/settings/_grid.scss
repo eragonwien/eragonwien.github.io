@@ -28,16 +28,15 @@ body {
         max-width: 100%;
         max-height: 100%;
     }
+    .img-text {
+        width: 100%;
+    }
 }
 
 .listing {
     width: 100%;
     .listing-row {
         width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-content: flex-start;
         
     }
 }
@@ -50,6 +49,17 @@ body {
         width: 100%;
     }
 }
+
+.forms {
+    max-width: 100%;
+    .form-title {
+        width: 100%;
+    }
+    .input-form {
+        width: 100%;
+    }
+}
+
 @include breakpoint(sm) {
 
 }
@@ -63,6 +73,9 @@ body {
             width: 60%;
         }
     }
+    .forms .input-form {
+        width: 50%;
+    }
 }
 @include breakpoint(lg) {
     .listing .listing-row {
@@ -74,6 +87,9 @@ body {
             width: 70%;
         }
     }
+    .forms .input-form {
+        width: 50%;
+    }
 }
 @include breakpoint(xl) {
     .listing .listing-row {
@@ -84,5 +100,8 @@ body {
         .row-body {
             width: 70%;
         }
+    }
+    .forms .input-form {
+        width: 50%;
     }
 }

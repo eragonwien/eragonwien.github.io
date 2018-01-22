@@ -4,7 +4,7 @@ html {
 }
 /* FONT SIZE */
 html {
-    a, p, li, button {
+    a, p, li, button, label, input {
         font-size: 1rem;
     }
     h1 {
@@ -20,7 +20,7 @@ html {
   
 @include breakpoint(sm) {
     html {
-        a, p, li, button {
+        a, p, li, button, label, input {
             font-size: 1rem;
         }
         h1 {
@@ -36,7 +36,7 @@ html {
 }
 @include breakpoint(md) {
     html {
-        a, p, li, button {
+        a, p, li, button, label, input {
            font-size: 1.2rem;
         }
         h1 {
@@ -52,7 +52,7 @@ html {
 }
 @include breakpoint(lg) {
     html {
-        a, p, li, dl, button {
+        a, p, li, dl, button, label, input {
               font-size: 1.6rem;
         }
         h1 {
@@ -68,7 +68,7 @@ html {
 }
 @include breakpoint(xl) {
     html {
-        a, p, li, dl, button {
+        a, p, li, dl, button, label, input {
             font-size: 1.8rem;
         }
         h1 {
