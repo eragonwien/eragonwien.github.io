@@ -21,6 +21,15 @@ body {
     .portfolio {
         width: 100%;
     }
+    .listing {
+        width: 100%;
+    }
+    .forms {
+        max-width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
 }
 
 .portfolio .gallery {
@@ -33,15 +42,8 @@ body {
     }
 }
 
-.listing {
-    width: 100%;
-    .listing-row {
-        width: 100%;
-        
-    }
-}
-
 .listing .listing-row {
+    width: 100%;
     .row-head {
         width: 100%;
     }
@@ -51,7 +53,6 @@ body {
 }
 
 .forms {
-    max-width: 100%;
     .form-title {
         width: 100%;
     }
