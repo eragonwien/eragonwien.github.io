@@ -45,8 +45,3 @@
         flex-direction: row;
     }
 }
-@include breakpoint(xl) {
-    .listing .listing-row {
-        flex-direction: row;
-    }
-}

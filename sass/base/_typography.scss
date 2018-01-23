@@ -66,19 +66,3 @@ html {
         }
     }
 }
-@include breakpoint(xl) {
-    html {
-        a, p, li, dl, button, label, input {
-            font-size: 1.8rem;
-        }
-        h1 {
-            font-size: 5rem;
-        }  
-        h2 {
-            font-size: 4.5rem;
-        }
-        h3, .sidenav, .navbar {
-            font-size: 2rem;
-        }
-    }
-}

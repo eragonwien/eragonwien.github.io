@@ -92,17 +92,3 @@ body {
         width: 50%;
     }
 }
-@include breakpoint(xl) {
-    .listing .listing-row {
-        flex-direction: row;
-        .row-head {
-            width: 30%;
-        }
-        .row-body {
-            width: 70%;
-        }
-    }
-    .forms .input-form {
-        width: 50%;
-    }
-}

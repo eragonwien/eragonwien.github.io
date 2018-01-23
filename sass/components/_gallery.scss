@@ -62,8 +62,3 @@
         max-width: calc(33.33% - 2em);
     }
 }
-@include breakpoint(xl) {
-    .portfolio .gallery .project {
-        max-width: calc(33.33% - 2em);
-    }
-}

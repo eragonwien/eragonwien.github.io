@@ -1,0 +1,37 @@
+{
+  "name": "eragonwien",
+  "version": "1.0.0",
+  "description": "portfolio of eragonwien",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eragonwien/eragonwien.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "eragonwien",
+    "hoang",
+    "son",
+    "nguyen"
+  ],
+  "author": "Hoang Son Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eragonwien/eragonwien.github.io/issues"
+  },
+  "homepage": "https://github.com/eragonwien/eragonwien.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4"
+  }
+}

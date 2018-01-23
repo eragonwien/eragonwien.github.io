@@ -15,14 +15,3 @@
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }
-
-.bg-img, %bg-img {
-  background: no-repeat center center;
-  background-size: cover;
-}
-
-@mixin background($name) {
-  @extend %bg-img;
-  background-image: url('../images/' + $name + '.jpg');
-}
-
