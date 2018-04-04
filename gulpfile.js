@@ -15,16 +15,26 @@ gulp.task('sassmin', function () {
         }));
 });
 
-gulp.task('browser-sync', function () {
+gulp.task('browserSync', function () {
     browserSync.init({
         server: {
-            baseDir: '.'
-        }
+            baseDir: 'alt',
+            index: 'index.html'
+        },
+        port: 4001,
+        injectChanges: true,
     });
 });
 
+gulp.task('reload', function () {
+    return gulp.src('alt/index.html')
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
+
 gulp.task('minijs', function () {
-    return gulp.src('js/custom.js')
+    return gulp.src('alt/js/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
@@ -33,13 +43,11 @@ gulp.task('minijs', function () {
 });
 
 gulp.task('minicss', function () {
-    return gulp.src('dist/app.css')
+    return gulp.src('alt/css/*.css')
         .pipe(cssnano())
         .pipe(gulp.dest('dist'))
 });
 
-gulp.task('watch', ['browser-sync', 'sassmin'], function () {
-    gulp.watch('sass/**/*.scss', ['sassmin']);
-    gulp.watch('index.html', browserSync.reload());
-    gulp.watch('js/**/*.js', ['minijs']);
+gulp.task('watch', ['browserSync'], function () {
+    gulp.watch('alt/**/*', ['reload']);
 });
