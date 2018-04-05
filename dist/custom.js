@@ -1,1 +1,0 @@
-function openSideNav(){document.getElementById("sidenav").style.width="80%"}function closeSideNav(){document.getElementById("sidenav").style.width="0%"}function scrollToTop(){scrollToView("home")}function scrollToView(e){document.getElementById(e).scrollIntoView({block:"start",behavior:"smooth"}),closeSideNav()}document.body.addEventListener("touchstart",{passive:!0});
