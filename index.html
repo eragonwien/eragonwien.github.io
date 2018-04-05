@@ -1,180 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Hoang Son Nguyen">
-    <meta name="publisher" content="Hoang Son Nguyen">
-    <meta name="copyright" content="Hoang Son Nguyen">
-    <meta name="page-type" content="Private Homepage">
-    <meta name="audience" content="Alle"><meta http-equiv="content-language" content="en">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Portfolio of Hoang Son Nguyen">
-    <meta name="keywords" content="portfolio, programming, it, computer science, software, developer">
-    <!--CUSTOM CSS-->
-    <link rel="stylesheet" type="text/css" href="dist/app.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    <!--ICON-->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Nguyen's Portfolio</title>
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nguyen</title>
 </head>
 <body ng-app="eragonwien">
-    
-    <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
-        <button onclick="openSideNav()"><i class="fas fa-bars"></i> Navigation</button>
-        <!--a href=""><i class="fas fa-bars" onclick="openSideNav()"></i></a-->
-        <!--a href="" onclick="scrollTop()">NGUYEN HOANG SON</a-->
-    </nav>
-    <nav class="sidenav" id="sidenav">
-        <a href="" class="closeBtn" onclick="closeSideNav()">close <i class="fas fa-times-circle"></i></a>
-        <a href="" onclick="scrollToView('home')">Home</a>
-        <a href="" onclick="scrollToView('portfolio')">Portfolio</a>
-        <a href="" onclick="scrollToView('resume')">Resume</a>
-        <a href="" onclick="scrollToView('contact')">Contact</a>
-    </nav>
+    <header ui-view name="header"></header>
+    <main ui-view name="main"></main>
+    <footer ui-view name="footer"></footer>
 
-    <!-- HERO IMAGE -->
-    <section class="hero-img" id="home" ng-cloak>
-        <div class="hero-text">
-            <h1>Hello, I'm Son</h1>
-            <p>I am a junior web developer</p>
-            <button class="button-lg" onclick="scrollToView('contact')">I'm available for hire</button>
-        </div>
-    </section>
-
-    <!-- PROJECT -->
-    <section class="portfolio" id="portfolio">
-        <h2>My Projects</h2>
-        <div class="gallery">
-            <div class="project">
-                <img src="images/ng-house.jpg" alt="project_img">
-                <div class="img-text">
-                    <h3>NG-HOUSE</h3>
-                    <p>House searching &middot CRUD &middot MySQL &middot ExpressJS &middot AngularJS &middot NodeJS</p>
-                    <p>
-                        <a class="focus-button" href="https://eragonwien.ddns.net/ng-house">Demo</a>
-                        <a class="button" href="https://github.com/eragonwien/NG-House">Github</a> 
-                    </p>    
-                </div>        
-            </div>
-        </div>
-    </section>
-
-    <!-- RESUME -->
-    <section class="listing" id="resume">
-        <h2>My Resume</h2>
-        <div class="intro-text">
-            <p>My name is Hoang Son Nguyen and I'm a computer science bachelor at University of Vienna, Austria. Building software is my passion. Currently I am actively seeking software development related job offer.</p>
-        </div>
-        <form class="resume-download" action="pdf/resume.pdf" method="get">
-            <button class="focus-button" type="submit">VIEW</button>
-            <a class="button" href="pdf/resume.pdf" target="_blank" download>DOWNLOAD</a>
-        </form>
-        <div class="listing-row">
-            <div class="row-head">
-                <h3>Technologies</h3>
-            </div>
-            <div class="row-body">
-                <dl>
-                    <dd>HTML &middot CSS &middot Javascript</dd>
-                    <dd>Bootstrap &middot SASS &middot Jquery</dd>
-                    <dd>MySQL &middot MongoDB</dd>
-                    <dd>NodeJS &middot ExpressJS &middot AngularJS</dd>
-                    <dd>Gulp &middot NPM</dd>
-                    <dd>Java/JavaEE &middot Tomcat &middot Maven</dd>
-                    <dd>Eclipse &middot Visual Studio 2017 &middot VS Code &middot Inkscape</dd>
-                </dl>
-            </div>
-        </div>
-        <div class="listing-row">
-            <div class="row-head">
-                <h3>Work experience</h3>
-            </div>
-            <div class="row-body">
-                <dl>
-                    <dt>Internship in Software Testing and Administration</dt>
-                    <dd><strong>10.2017 - 1.2018</strong>, Institute of Science and Technology Austria</dd>
-                    <dd>I was responsible for the software testing of a web application 
-                        from point of views of different user roles. 
-                        I work closely with the development team reporting problems and bugs of the application
-                        as well as suggesting new features to satisfy the need of the client.</dd>
-                </dl>
-            </div>
-        </div>
-        <div class="listing-row">
-            <div class="row-head">
-                <h3>Education</h3>
-            </div>
-            <div class="row-body">
-                <dl>
-                    <dt>Bachelor of Science - Business Informatics</dt>
-                    <dd><strong>2017</strong>, University of Vienna, Vienna, Austria</dd>
-                    <dt>HAK Matura</dt>
-                    <dd><strong>2014</strong>, Pernerstorferstrasse 77, 1100 Vienna, Austria</dd>
-                </dl>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <form class="forms" id="contact" action="#" method="post">
-        <div class="form-title">
-            <h2>Contact</h2>
-            <p>nguyennhoangson@gmail.com</p>
-        </div>
-        <div class="input-form">
-            <label for="firstname">Firstname: </label>
-            <input type="text" name="firstname" id="firstname">          
-        </div>
-        <div class="input-form">
-            <label for="lastname">Lastname*: </label>
-            <input type="text" name="lastname" id="lastname">          
-        </div>
-        <div class="input-form">
-            <label for="email">Email*: </label>
-            <input type="email" name="email" id="email">          
-        </div>
-        <div class="input-form">
-            <label for="comment">Comment: </label>
-            <input type="text" name="comment" id="comment">          
-        </div>
-        <div class="input-form">
-            <button class="focus-button" type="submit">Send</button>
-            <small>* required</small>
-        </div>
-    </form>
-
-    <!-- FOOTER -->
-    <footer>
-        <p><i class="far fa-copyright" aria-hidden="true"></i> 2018 <b>Hoang Son Nguyen</b></p>
-        <p>
-            <a href="https://www.facebook.com/son.nguyenhoang.37" class="icon" target="_blank">
-                <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/hoang-son-nguyen-286a5859/" class="icon" target="_blank">
-                <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/eragonwien" class="icon" target="_blank">
-                <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
-            </a> 
-        </p>
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- Font Awesome -->
-    <!--script defer src="import/fontawesome-all.js"></script-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-
-    <!-- ANGULAR CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
-
-    <!-- ANGULAR SCRIPTS -->
-    <script src="js/app.js" type="text/javascript"></script>    
-
-    <!-- CUSTOM JS -->
-    <script src="dist/custom.js" type="text/javascript"></script>  
-   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- AngularJS Router UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <!-- Minified script -->
+    <script src="javascripts/bundle.js"></script>
 </body>
 </html>
