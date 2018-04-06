@@ -1,7 +1,6 @@
 'use strict';
 
 let gulp = require('gulp');
-let sass = require('gulp-sass');
 let browserSync = require('browser-sync').create();
 let concat = require('gulp-concat');
 let cssnano = require('gulp-cssnano');
@@ -10,7 +9,6 @@ let del = require('del');
 let runSequence = require('run-sequence');
 gulp.task('sassmin', function () {
     return gulp.src('sass/app.scss')
-        .pipe(sass())
         .pipe(gulpIf('*.css', cssnano()))
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
