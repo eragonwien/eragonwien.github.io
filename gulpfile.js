@@ -7,6 +7,8 @@ let cssnano = require('gulp-cssnano');
 let gulpIf = require('gulp-if');
 let del = require('del');
 let runSequence = require('run-sequence');
+const WATCH_INTERVAL = 500;
+
 gulp.task('sassmin', function () {
     return gulp.src('sass/app.scss')
         .pipe(gulpIf('*.css', cssnano()))
@@ -67,6 +69,6 @@ gulp.task('minicss', function () {
 });
 
 gulp.task('watch', ['browserSync'], function () {
-    gulp.watch(['./**/*.html', './**/*.css'], ['reload']);
-    gulp.watch('javascripts/angular/*.js', ['build:js']);
+    gulp.watch(['./**/*.html', './**/*.css'], {interval: WATCH_INTERVAL}, ['reload']);
+    gulp.watch('javascripts/angular/*.js', {interval: WATCH_INTERVAL}, ['build:js']);
 });
