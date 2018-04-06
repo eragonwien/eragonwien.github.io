@@ -1,49 +1,37 @@
-<div id="first_page" class="slider fullscreen">
+<div id="first_page" class="slider hero-img">
     <ul class="slides">
         <li>
-            <img src="images/tech_1.jpg" alt="bg_image_1">
-            <div class="caption center-align">
+            <img src="images/flat_mountain_1.jpg" alt="bg_image_1">
+            <div class="caption left-align">
                 <div class="row">
                     <div class="col s12">
-                        <h1>Hoang Son Nguyen</h1>
+                        <h3>
+                            <span class="black">Hoang Son Nguyen</span> 
+                        </h3>
+                        <h4>
+                            <a href="https://github.com/eragonwien" class="white-text" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/son.nguyenhoang.37" class="white-text" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/hoang-son-nguyen-286a5859/" class="white-text" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.xing.com/profile/HoangSon_Nguyen2/" class="white-text" target="_blank"><i class="fab fa-xing"></i></a>
+                        </h4>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <p>
-                            <span class="flow-text">Hello! my name is Hoang Son Nguyen. I'm a computer science graduate in Vienna and looking for a position as a web developer.</span>
-                        </p>
-                        <p>
-                            <span class="flow-text">
-                                I have a diverse set of skills ranging from HTML, CSS, Javascript to NodeJS, Java, Python and PHP, 
-                                knowledges of well-known JS framworks such as AngularJS and ExpressJS as well as relational databases (mySQL).
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <p>
-                            <a href="https://github.com/eragonwien" class="white-text"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="https://www.facebook.com/son.nguyenhoang.37" class="white-text"><i class="fab fa-facebook fa-3x"></i></a>
-                            <a href="https://www.linkedin.com/in/hoang-son-nguyen-286a5859/" class="white-text"><i class="fab fa-linkedin fa-3x"></i></a>
-                        </p> 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <a  class="btn waves-effect teal" ui-sref="portfolio" ui-sref-active="active">Portfolio</a>
-                        <a class="btn waves-effect white black-text" ui-sref="cv" ui-sref-active="active">Curriculum Vitae</a>
+                        <p><span class="black flow-text">I'm a computer science graduate in Vienna and looking for a position as a web developer.</span></p>
                     </div>
                 </div>
             </div>
         </li>
     </ul>
 </div>
+
 <script>
     $(document).ready(function(){
         $('.slider').slider({
-            indicators: false
+            indicators: false,
+            height: 1000
         });
+        $('.sidenav').sidenav();
     });
 </script>

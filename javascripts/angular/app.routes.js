@@ -8,8 +8,14 @@ function routing(stateProvider, urlRouterProvider) {
         name: 'home',
         url: '/',
         views: {
+            header: {
+                templateUrl: 'views/navbar.html'
+            },
             main: {
                 templateUrl: 'views/home.html'
+            },
+            footer: {
+                templateUrl: 'views/footer.html'
             }
         }
     };
@@ -24,60 +30,28 @@ function routing(stateProvider, urlRouterProvider) {
                 templateUrl: 'views/portfolio.html'
             },
             footer: {
-                templateUrl: 'views/navbar.html'
+                templateUrl: 'views/footer.html'
             }
         }
     };
-    let cv = {
-        name: 'cv',
-        url: '/cv',
+    let about = {
+        name: 'about',
+        url: '/about',
         views: {
             header: {
                 templateUrl: 'views/navbar.html'
             },
             main: {
-                templateUrl: 'views/home.html'
+                templateUrl: 'views/about.html'
             },
             footer: {
-                templateUrl: 'views/navbar.html'
+                templateUrl: 'views/footer.html'
             }
         }
-    };
-    let project_meantodo = {
-        name: 'meantodo',
-        url: 'projects/meantodo',
-        views: {
-            header: {
-                templateUrl: 'views/navbar.html'
-            },
-            main: {
-                templateUrl: 'views/home.html'
-            },
-            footer: {
-                templateUrl: 'views/navbar.html'
-            }
-        }
-    };
-    let project_nghouse = {
-        name: 'nghouse',
-        url: '/projects/nghouse',
-        views: {
-            header: {
-                templateUrl: 'views/navbar.html'
-            },
-            main: {
-                templateUrl: 'views/home.html'
-            },
-            footer: {
-                templateUrl: 'views/navbar.html'
-            }
-        }
-    };
+    }
     stateProvider.state(home);
     stateProvider.state(portfolio);
-    stateProvider.state(cv);
-    stateProvider.state(project_meantodo);
-    stateProvider.state(project_nghouse);
+    stateProvider.state(about);
 
     urlRouterProvider.otherwise('/');
 }

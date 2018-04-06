@@ -1,0 +1,50 @@
+<ul id="side-nav" class="sidenav sidenav-fixed teal">
+    <li>
+        <div class="user-view">
+            <a ui-sref="about" ui-sref-active="active" class="white-text sidenav-close">
+                <img class="circle" src="images/potrait.jpg">
+            </a>
+            <a ui-sref="about" ui-sref-active="active" class="white-text sidenav-close">
+                <span class="white-text name">Hoang Son Nguyen</span>
+            </a>
+            <a ui-sref="about" ui-sref-active="active" class="white-text sidenav-close">
+                <span class="white-text email">nguyennhoangson@gmail.com</span>
+            </a>
+        </div>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+        <a ui-sref="home" ui-sref-active="active" class="white-text sidenav-close"><i class="material-icons left white-text">home</i>home</a>
+    </li>
+    <li>
+        <a ui-sref="portfolio" ui-sref-active="active" class="white-text sidenav-close"><i class="material-icons left white-text">folder_special</i>portfolio</a>
+    </li>
+    <li>
+        <a ui-sref="about" ui-sref-active="active" class="white-text sidenav-close"><i class="material-icons left white-text">face</i>about</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+        <a href="https://github.com/eragonwien" class="white-text sidenav-close" target="_blank">Github</a>
+    </li>
+    <li>
+        <a href="https://www.facebook.com/son.nguyenhoang.37" class="white-text sidenav-close" target="_blank">Facebook</a>
+    </li>
+    <li>
+        <a href="https://www.linkedin.com/in/hoang-son-nguyen-286a5859/" class="white-text sidenav-close" target="_blank">Linkedin</a>
+    </li>
+    <li>
+        <a href="https://www.xing.com/profile/HoangSon_Nguyen2/" class="white-text sidenav-close" target="_blank">Xing</a>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+        <a ></a>
+    </li>
+</ul>
+<div class="fixed-action-btn hide-on-large-only">
+    <a data-target="side-nav" class="sidenav-trigger btn-floating btn-large teal"><i class="fas fa-bars"></i></a>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>

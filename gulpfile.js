@@ -67,6 +67,6 @@ gulp.task('minicss', function () {
 });
 
 gulp.task('watch', ['browserSync'], function () {
-    gulp.watch('./**/*.html', ['reload']);
+    gulp.watch(['./**/*.html', './**/*.css'], ['reload']);
     gulp.watch('javascripts/angular/*.js', ['build:js']);
 });
