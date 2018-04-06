@@ -63,7 +63,7 @@ gulp.task('build:js', function () {
 gulp.task('minicss', function () {
     return gulp.src('alt/css/*.css')
         .pipe(cssnano())
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', ['browserSync'], function () {

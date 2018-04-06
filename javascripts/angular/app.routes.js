@@ -48,7 +48,8 @@ function routing(stateProvider, urlRouterProvider) {
                 templateUrl: 'views/footer.html'
             }
         }
-    }
+    };
+
     stateProvider.state(home);
     stateProvider.state(portfolio);
     stateProvider.state(about);
